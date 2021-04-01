@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        UINavigationBar().setup()
+    }
+    
     var body: some View {
         AcronymsSearchBuilder.createModule()
             .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)

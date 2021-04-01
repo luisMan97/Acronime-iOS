@@ -15,14 +15,15 @@ struct AcronymsBodyView: View {
         if viewModel.acronym?.abbreviations?.first?.longforms != nil {
             viewModel.acronym?.abbreviations?.first?.longforms.map { longform in
                 VStack {
-                    Text("Busquedas encontradas de \(viewModel.acronym?.abbreviations?.first?.name ?? ""):")
-                        .padding(.top)
-                    
-                    List(longform, id: \.name) { item in
-                        VStack(alignment: .leading) {
-                            Text("Fullform: \(item.name ?? "")")
-                            Text("Frequence: \(item.freq ?? 0)")
-                            Text("Since: \(item.since ?? 0)")
+                    List {
+                        Section(header: Text("Busquedas encontradas de \(viewModel.acronym?.abbreviations?.first?.name ?? "")")) {
+                            ForEach(longform, id: \.name) { item in
+                                VStack(alignment: .leading) {
+                                    Text("Forma completa: \(item.name ?? "")")
+                                    Text("Frecuencia: \(item.freq ?? 0)")
+                                    Text("Desde: \(item.since ?? 0)")
+                                }
+                            }
                         }
                     }
                 }
@@ -35,15 +36,15 @@ struct AcronymsBodyView: View {
                         .multilineTextAlignment(.center)
                 }
                 
-                Text("Puedes probar por ejemplo con HM")
+                Text("Puedes probar por ejemplo con HM (pulsa en intentar para probar la busqueda con la apalabra HM)")
                     .font(.system(.body, design: .rounded))
                     .multilineTextAlignment(.center)
                 
-                /*Button {
-                    viewModel.getAbbreviatioDefinitions(abbreviation: "HMM")
+                Button {
+                    viewModel.getAbbreviatioDefinitions(abbreviation: "HM")
                 } label: {
                     Text("Intentar")
-                }*/
+                }
             }
         }
     }

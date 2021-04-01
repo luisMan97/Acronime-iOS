@@ -67,6 +67,8 @@
 		4EBCBAFF26155BBF00A4F28F /* URLComponentsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCB9B32615184400A4F28F /* URLComponentsExtensions.swift */; };
 		4EBCBB0226155BC600A4F28F /* ApiManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCB9A1261515CC00A4F28F /* ApiManagerConstants.swift */; };
 		4EBCBB0526155EA800A4F28F /* AcronymServerReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCBA62261531D700A4F28F /* AcronymServerReponse.swift */; };
+		4EBCBB102615686600A4F28F /* UINavigationBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCBB0F2615686600A4F28F /* UINavigationBarExtensions.swift */; };
+		4EBCBB142615688600A4F28F /* UINavigationBarAppearanceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCBB132615688600A4F28F /* UINavigationBarAppearanceExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,8 @@
 		4EBCBAB5261559EA00A4F28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EBCBABE26155A0A00A4F28F /* AcronymsSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsSearchTests.swift; sourceTree = "<group>"; };
 		4EBCBAC626155A3800A4F28F /* Acronime_iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acronime_iOSTests.swift; sourceTree = "<group>"; };
+		4EBCBB0F2615686600A4F28F /* UINavigationBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtensions.swift; sourceTree = "<group>"; };
+		4EBCBB132615688600A4F28F /* UINavigationBarAppearanceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarAppearanceExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +254,8 @@
 				4EBCB9AB2615182800A4F28F /* StringExtensions.swift */,
 				4EBCB9B32615184400A4F28F /* URLComponentsExtensions.swift */,
 				4EBCBA90261556A600A4F28F /* UIApplicationExtensions.swift */,
+				4EBCBB0F2615686600A4F28F /* UINavigationBarExtensions.swift */,
+				4EBCBB132615688600A4F28F /* UINavigationBarAppearanceExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -599,6 +605,7 @@
 				4EBCB9902615152000A4F28F /* APIRouter.swift in Sources */,
 				4EBCB9FA261523A500A4F28F /* IdentifiableError.swift in Sources */,
 				4EBCB9D626151EAD00A4F28F /* Variation.swift in Sources */,
+				4EBCBB142615688600A4F28F /* UINavigationBarAppearanceExtensions.swift in Sources */,
 				4EBCB9EF2615204400A4F28F /* AcronymsSearchViewModel.swift in Sources */,
 				4EBCBA5B26152CC600A4F28F /* VisualEffectView.swift in Sources */,
 				4EBCBA91261556A600A4F28F /* UIApplicationExtensions.swift in Sources */,
@@ -611,6 +618,7 @@
 				4EBCB9532614ED2B00A4F28F /* SceneDelegate.swift in Sources */,
 				4EBCBA5626152CAD00A4F28F /* ActivityIndicator.swift in Sources */,
 				4EBCB9D126151EA300A4F28F /* Longform.swift in Sources */,
+				4EBCBB102615686600A4F28F /* UINavigationBarExtensions.swift in Sources */,
 				4EBCB9C326151B2400A4F28F /* RemoteAcronymDataSource.swift in Sources */,
 				4EBCB9552614ED2B00A4F28F /* ContentView.swift in Sources */,
 				4EBCB9EA2615200200A4F28F /* GetAbbreviatioDefinitionsUseCase.swift in Sources */,
